@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Message the sacco</title>
+</head>
+<body>
+  <h1>Send a message to the sacco</h1>
+
+  <form action="#" method="post">
+    <p>
+      <label for="name">Your name</label><br>
+      <input type="text" id="name" name="name" required>
+    </p>
+
+    <p>
+      <label for="phone">Your phone number</label><br>
+      <input type="tel" id="phone" name="phone" required
+             pattern="07[0-9]{8}" title="07 followed by eight digits, e.g. 0712345678">
+    </p>
+
+    <p>
+      <label for="message">Your message</label><br>
+      <textarea id="message" name="message" rows="5" cols="40" required></textarea>
+    </p>
+
+    <button type="submit">Send message</button>
+  </form>
+</body>
+</html>
