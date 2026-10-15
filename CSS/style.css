@@ -1,5 +1,25 @@
 body {
-    background: #F7F3E8;
+    background: #04ecd9;
     color: #262626;
 }
 
+h1, h2, h3{
+    border-width: 2px;
+    border-color: green;
+    border-style: solid;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    align-items: center;
+    text-align: center;
+}
+
+strong, em, a{
+    border: 3px solid brown;
+}
