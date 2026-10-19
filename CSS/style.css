@@ -4,6 +4,7 @@ body {
 }
 
 h1, h2, h3{
+    display: block;
     border-width: 2px;
     border-color: green;
     border-style: solid;
@@ -22,4 +23,13 @@ h1, h2, h3{
 
 strong, em, a{
     border: 3px solid brown;
+}
+
+main{
+    display: block;
+}
+
+nav{
+    position: sticky;
+    top: 0;
 }
