@@ -1,35 +1,126 @@
-body {
-    background: #04ecd9;
+/*A css Comment*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background: #f7f3f8;
     color: #262626;
+    line-height: 1.5;
+    font-family: 'Source Sans 3', sans-serif;
 }
 
-h1, h2, h3{
-    display: block;
-    border-width: 2px;
-    border-color: green;
-    border-style: solid;
-
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-right: 50px;
-    padding-left: 50px;
-
-    margin-top: 100px;
-    margin-bottom: 100px;
-
-    align-items: center;
-    text-align: center;
+h1, h2{
+    font-family: 'Source Serif 4', serif;
+    font-weight: 600;
 }
 
-strong, em, a{
-    border: 3px solid brown;
-}
-
-main{
-    display: block;
+header{
+    background: #1f6f3e;
+    color: #f7f3e8;
 }
 
 nav{
+    background: #262626
+}
+
+nav a{
+    color: #f7f3e8;
+}
+a{
+    color: #1f6f3e;
+}
+
+header, main, aside, footer{
+    padding: 1rem;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*flexbox for the nav items*/
+nav{
     position: sticky;
     top: 0;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0.75rem 1rem;
+}
+
+.logo{
+    width: 3.5rem;
+    height: auto;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0;
+}
+
+.route-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.route-cards li{
+    flex: 1 1 12rem;
+    padding: 1rem;
+    background: #ffffff;
+    border-top: 4px solid #d8a22b;
+}
+
+/*Grid Layout*/
+body{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 18rem;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "main aside"
+    "footer footer";
+}
+header{grid-area: header;}
+nav{grid-area: nav;}
+main{grid-area: main;}
+aside{grid-area: aside;}
+footer{grid-area: footer;}
+footer{
+    border-top: 3px solid #d8a22b;
+}
+
+/*Responsive web design*/
+@media (max-width: 600px){
+
+    body{
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "aside"
+        "footer";
+    }
+    nav{
+        position: static;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    .logo{
+        width: 2.5rem;
+    }
 }
