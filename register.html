@@ -3,8 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ereteti Dairy Sacco</title>
+    <title>Join — Ereteti Dairy Sacco</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&amp;family=Source+Serif+4:wght@600&amp;display=swap">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
 
@@ -32,22 +34,22 @@
         month for the litres we accept.
       </p>
 
-      <form action="#" method="______">
+      <form action="#" method="post">
 
         <fieldset>
           <legend>Your details</legend>
 
-          <label ______="first-name">First name</label>
+          <label for="first-name">First name</label>
           <input type="text" id="first-name" name="first_name" required>
 
           <label for="last-name">Last name</label>
-          <input type="text" id="last-name" name="last_name" ______>
+          <input type="text" id="last-name" name="last_name" required>
 
           <label for="national-id">National ID number</label>
           <input type="text" id="national-id" name="national_id" required>
 
           <label for="phone">Phone number</label>
-          <input type="______" id="phone" name="phone"
+          <input type="tel" id="phone" name="phone"
                  pattern="07[0-9]{8}"
                  title="Ten digits, starting 07"
                  placeholder="07XXXXXXXX"
@@ -67,17 +69,29 @@
 
           <label for="date-joined">Date of joining</label>
           <input type="date" id="date-joined" name="date_joined"
-                 ______="2026-09-24" required>
+                 max="2026-09-24" required>
         </fieldset>
 
         <label for="rules">
-          <input type="checkbox" id="rules" name="rules" ______>
+          <input type="checkbox" id="rules" name="rules" required>
           I accept the sacco's rules
         </label>
 
-        <______ type="submit">Apply to join</button>
+        <button type="submit">Apply to join</button>
       </form>
     </main>
+
+    <aside>
+      <h2>Notices</h2>
+      <ul>
+        <li>Milk is paid at <strong>KSh 52.00 a litre</strong> from
+            1 October 2026.</li>
+        <li>Annual General Meeting: Saturday 17 October, 10 a.m., at the
+            Kiserian collection centre.</li>
+        <li>New members: <a href="register.html">apply to join</a>. You need
+            a national ID and a bank account.</li>
+      </ul>
+    </aside>
 
     <footer>
         <p>Ereteti Dairy Sacco, PO Box 4021, Ngong.</p>

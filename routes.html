@@ -3,8 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ereteti Dairy Sacco</title>
+  <title>Routes — Ereteti Dairy Sacco</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&amp;family=Source+Serif+4:wght@600&amp;display=swap">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
 
@@ -19,19 +21,25 @@
         <li><a href="about.html">About</a></li>
         <li><a href="routes.html">Routes</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="join.html">Join</a></li>
+        <li><a href="register.html">Join</a></li>
         <li><a href="deliveries.html">Deliveries</a></li>
       </ul>
-    </______>
+    </nav>
 
     <main>
+      <!-- Week 8: the search box the script filters with -->
+      <label for="route-search">Find a route or a centre</label>
+      <input type="search" id="route-search"
+             placeholder="e.g. Kibiko">
+      <p id="route-count" aria-live="polite"></p>
+
       <section>
         <h2>Kiserian route</h2>
         <p>The lorry runs from 6.30am and again from 4.00pm.</p>
         <ul>
           <li>Olepolos centre</li>
           <li>Kandisi centre</li>
-        </______>
+        </ul>
       </section>
 
       <section>
@@ -54,6 +62,18 @@
       </section>
     </main>
 
+    <aside>
+      <h2>Notices</h2>
+      <ul>
+        <li>Milk is paid at <strong>KSh 52.00 a litre</strong> from
+            1 October 2026.</li>
+        <li>Annual General Meeting: Saturday 17 October, 10 a.m., at the
+            Kiserian collection centre.</li>
+        <li>New members: <a href="register.html">apply to join</a>. You need
+            a national ID and a bank account.</li>
+      </ul>
+    </aside>
+
     <footer>
         <p>Ereteti Dairy Sacco, PO Box 4021, Ngong.</p>
         <p>Site built by Sean Githongo, DBT Year 1, 2026.</p>
@@ -61,4 +81,3 @@
 
 </body>
 </html>
-
